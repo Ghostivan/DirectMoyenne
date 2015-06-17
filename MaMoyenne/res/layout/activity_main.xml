@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relativelayout"
+    style="@style/custom_style_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esgi.presentation.MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titleHomePage"
+                style="@style/custom_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/titleHomePage" />
+
+            <Button
+                android:id="@+id/bt_newMatiere"
+                style="@style/custom_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleHomePage"
+                android:drawableLeft="@drawable/matiere"
+                android:onClick="initNewMatiere"
+                android:text="@string/newMatiere" />
+
+            <Button
+                android:id="@+id/bt_newNote"
+                style="@style/custom_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_newMatiere"
+                android:drawableLeft="@drawable/notes"
+                android:onClick="initNewNotes"
+                android:text="@string/newNote" />
+
+            <Button
+                android:id="@+id/bt_calculate"
+                style="@style/custom_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_newNote"
+                android:drawableLeft="@drawable/calcul"
+                android:onClick="initDashBoard"
+                android:text="@string/txtMoyenne" />
+            
+            <Button
+		        android:id="@+id/bt_deleteAll"
+		        style="@style/custom_bt_supr"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/bt_calculate"
+		        android:onClick="deleteAll"
+		        android:text="@string/txtDelete" 
+		        android:drawableLeft="@drawable/delete" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

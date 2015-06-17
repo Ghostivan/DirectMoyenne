@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/matiere"
+        style="@style/custom_tv_dashboard"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/coef"
+        style="@style/custom_tv_dashboard" />
+
+    <TextView
+        android:id="@+id/notes"
+        style="@style/custom_tv_dashboard" />
+
+    <TextView
+        android:id="@+id/moyenne"
+        style="@style/custom_tv_dashboard" />
+
+</LinearLayout>
